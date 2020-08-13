@@ -11,7 +11,6 @@
 
 <script>
 export default {
-  name: "Buttons",
-  components: {}
+  name: 'Buttons',
 };
 </script>

@@ -4,6 +4,8 @@
       <router-link to="/">Home</router-link>|
       <router-link to="/button">Buttons</router-link>|
       <router-link to="/date">DatePicker</router-link>|
+      <router-link to="/SearchFilter">SearchFilter</router-link>|
+      <router-link to="/Avatar">Avatar</router-link>|
     </div>
     <router-view />
   </div>

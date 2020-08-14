@@ -6,6 +6,7 @@
       <router-link to="/date">DatePicker</router-link>|
       <router-link to="/SearchFilter">SearchFilter</router-link>|
       <router-link to="/Avatar">Avatar</router-link>|
+      <router-link to="/Card">ContentCard</router-link>|
     </div>
     <router-view />
   </div>

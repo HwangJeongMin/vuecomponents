@@ -1,12 +1,27 @@
 <template>
-  <div>
-    <h1>This is date picker</h1>
-  </div>
+  <date-picker v-model="date" valueType="format"></date-picker>
 </template>
 
 <script>
-export default {};
-</script>
+import DatePicker from 'vue2-datepicker';
+import 'vue2-datepicker/index.css';
 
-<style lang="scss" scoped>
-</style>
+export default {
+  components: {
+    DatePicker,
+  },
+  props: {
+    value: {
+      type: Object,
+    },
+  },
+  data() {
+    return {
+      date: new Date(),
+    };
+  },
+  created() {
+    this.date = this.props.value;
+  },
+};
+</script>

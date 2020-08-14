@@ -6,14 +6,11 @@
 </template>
 
 <script>
-import DatePicker from "../components/DatePicker";
+import DatePicker from '../components/DatePicker';
 
 export default {
   components: {
-    DatePicker
-  }
+    DatePicker,
+  },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>

@@ -4,8 +4,7 @@ import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'Home',
     component: Home,
@@ -19,6 +18,11 @@ const routes = [
     path: '/date',
     name: 'DatePicker',
     component: () => import('../views/DatePicker.vue'),
+  },
+  {
+    path: '/chip',
+    name: 'Chip',
+    component: () => import('../views/ChipPage.vue'),
   },
 ];
 

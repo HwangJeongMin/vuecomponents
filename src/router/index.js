@@ -13,6 +13,7 @@ const routes = [
   {
     path: '/button',
     name: 'Button',
+
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -57,6 +58,26 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Card.vue'),
+  },
+  {
+    path: '/togglebutton',
+    name: 'ToggleButton',
+    component: () => import('../views/ToggleButton.vue'),
+  },
+  {
+    path: '/videoplayer',
+    name: 'VideoPlayer',
+    component: () => import('../views/VideoPlayer.vue'),
+  },
+  {
+    path: '/date',
+    name: 'DatePicker',
+    component: () => import('../views/DatePicker.vue'),
+  },
+  {
+    path: '/chip',
+    name: 'Chip',
+    component: () => import('../views/ChipPage.vue'),
   },
 ];
 

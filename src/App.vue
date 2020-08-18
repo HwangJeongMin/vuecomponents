@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>| <router-link to="/button">Buttons</router-link>|
+      <router-link to="/">Home</router-link>|
+      <router-link to="/button">Buttons</router-link>|
       <router-link to="/date">DatePicker</router-link>|
       <router-link to="/SearchFilter">SearchFilter</router-link>|
       <router-link to="/Avatar">Avatar</router-link>|
       <router-link to="/Card">ContentCard</router-link>|
       <router-link to="/togglebutton">ToggleButton</router-link>|
       <router-link to="/videoplayer">videoplayer</router-link>|
-      <router-link to="/date">DatePicker</router-link>| <router-link to="/chip">Chip</router-link>|
+      <router-link to="/date">DatePicker</router-link>|
+      <router-link to="/chip">Chip</router-link>|
     </div>
     <router-view />
   </div>

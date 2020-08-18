@@ -16,13 +16,13 @@
             </div>
           </div>
         </div>
-        <div class="float-right text-right">
+        <div class="flex float-right text-right">
           <div class="inline-block rounded-full bg-blue-300 text-white text-xs px-3 py-1 m-2">
             <div class="flex items-center align-middle">
               <span>VR-ID JE00430381</span>
             </div>
           </div>
-          <button class="align-middle">
+          <button @click="show = !show" class="align-middle">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path
@@ -31,6 +31,23 @@
               />
             </svg>
           </button>
+          <div class="absolute w-40" style="margin-left:170px;">
+            <transition name="fade">
+              <div
+                v-if="show"
+                class="bg-blue-100 border border-blue-900 text-black px-4 py-2 leading-6 text-left"
+              >
+                <p class="font-bold">다운로드</p>
+                <p class="font-bold">사용자 폐기</p>
+                <p class="font-bold">다운로드</p>
+                <p class="font-bold">원본 업데이트</p>
+                <p class="font-bold">전송</p>
+                <p class="font-bold">등록 요청</p>
+                <p class="font-bold">XSAN으로 전송</p>
+                <p class="font-bold">작업흐름 보기</p>
+              </div>
+            </transition>
+          </div>
         </div>
       </div>
     </div>
@@ -57,5 +74,24 @@
 export default {
   name: 'ContentCard',
   components: {},
+  data() {
+    return {
+      show: false,
+    };
+  },
 };
 </script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.left-310 {
+  left: 310px;
+}
+</style>

@@ -191,6 +191,106 @@
           </template>
         </collapse>
       </div>
+      <div class="px-4 py-2">
+        <collapse :postData="{title:'기본정보'}">
+          <template slot="content">
+            <div>
+              <ul>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'1',
+                      checked:'',
+                      title:'심의전',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'2',
+                      checked:'',
+                      title:'의뢰',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'3',
+                      checked:'',
+                      title:'접수',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'4',
+                      checked:'',
+                      title:'진행',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'5',
+                      checked:'',
+                      title:'면제',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'6',
+                      checked:'',
+                      title:'재의뢰',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'7',
+                      checked:'',
+                      title:'반려',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'8',
+                      checked:'',
+                      title:'합격',
+                    }"
+                  ></checkBtn>
+                </li>
+                <li class="float-left ml-1">
+                  <checkBtn
+                    :cData="{
+                      name:'optionTest',
+                      value:'9',
+                      checked:'',
+                      title:'합격취소',
+                    }"
+                  ></checkBtn>
+                </li>
+              </ul>
+            </div>
+          </template>
+        </collapse>
+      </div>
     </div>
   </div>
 </template>
@@ -201,6 +301,7 @@ import collapse from '../components/Collapse';
 import testTag2 from '../components/TestTag2';
 import filterOption from '../components/FilterOption';
 import radioBtn from '../components/RadioButton';
+import checkBtn from '../components/CheckButton';
 
 export default {
   name: 'SearchFilter',
@@ -210,6 +311,7 @@ export default {
     testTag2,
     filterOption,
     radioBtn,
+    checkBtn,
   },
   data() {
     return {

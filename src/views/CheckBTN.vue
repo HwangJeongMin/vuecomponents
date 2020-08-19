@@ -7,7 +7,7 @@
             name:'optionTest',
             value:'1',
             checked:'checked',
-            title:'checkbox 1',
+            title:'심의전',
         }"
         ></checkBtn>
       </li>
@@ -17,7 +17,7 @@
             name:'optionTest',
             value:'2',
             checked:'',
-            title:'checkbox 2',
+            title:'의뢰',
         }"
         ></checkBtn>
       </li>
@@ -27,7 +27,7 @@
             name:'optionTest',
             value:'3',
             checked:'',
-            title:'checkbox 3',
+            title:'접수',
         }"
         ></checkBtn>
       </li>

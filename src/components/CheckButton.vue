@@ -29,19 +29,17 @@ export default {
   display: inline-block;
   background: none;
   border: 1px solid #2b6cb0;
-  padding: 0px 15px;
+  padding: 0px 8px;
   text-align: center;
-  height: 35px;
-  line-height: 33px;
-  font-weight: 500;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 600;
   cursor: pointer;
   color: #2b6cb0;
-  border-radius: 3px;
 }
 
 .box-check-input input[type='checkbox']:checked + span {
   border: 1px solid #2b6cb0;
-  border-radius: 3px;
   background: #2b6cb0;
   color: #fff;
 }

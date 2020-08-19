@@ -11,6 +11,7 @@
       <router-link to="/videoplayer">videoplayer</router-link>|
       <router-link to="/date">DatePicker</router-link>|
       <router-link to="/chip">Chip</router-link>|
+      <router-link to="/RadioBTN">RadioBTN</router-link>|
     </div>
     <router-view />
   </div>

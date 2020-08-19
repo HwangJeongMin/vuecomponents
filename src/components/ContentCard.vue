@@ -2,7 +2,7 @@
   <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
     <!-- 콘텐츠 이미지 시작 -->
     <div class="w-56 m-auto overflow-hidden">
-      <img src="../assets/logo.png" alt="Sunset in the mountains" class="w-56 min-w-0" />
+      <slot name="imgTag"></slot>
     </div>
     <!-- 콘텐츠 이미지 끝 -->
 
@@ -53,7 +53,7 @@
     </div>
 
     <div class="h-14 p-2 overflow-hidden break-words">
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
+      <slot name="content"></slot>
     </div>
 
     <div class="mx-2 px-2 py-2 border-t border-blue-900 h-full overflow-hidden">
@@ -78,6 +78,9 @@ export default {
     return {
       show: false,
     };
+  },
+  mounted() {
+    //console.log(this.cardImgSrc, this.cardContent);
   },
 };
 </script>

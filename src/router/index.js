@@ -79,6 +79,11 @@ const routes = [
     name: 'Chip',
     component: () => import('../views/ChipPage.vue'),
   },
+  {
+    path: '/RadioBTN',
+    name: 'RadioBTN',
+    component: () => import('../views/RadioBTN.vue'),
+  },
 ];
 
 const router = new VueRouter({

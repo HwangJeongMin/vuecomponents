@@ -37,7 +37,7 @@
       </div>
 
       <!-- {{-- 필터 옵션 --}} -->
-      <filterOption v-if="mode === 'filter'"></filterOption>
+      <filterOption v-if="mode !== 'tag'"></filterOption>
     </div>
     <div v-if="mode === 'tag'">
       <div class="flex">

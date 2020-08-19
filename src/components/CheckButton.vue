@@ -1,31 +1,31 @@
 <template>
-  <label class="box-radio-input">
-    <input type="radio" :name="rName" :value="rValue" :checked="rChecked" />
-    <span>{{ rTitle }}</span>
+  <label class="box-check-input">
+    <input type="checkbox" :name="cName" :value="cValue" :checked="cChecked" />
+    <span>{{ cTitle }}</span>
   </label>
 </template>
 
 <script>
 export default {
-  name: 'RadioButton',
-  props: ['rData'],
+  name: 'CheckButton',
+  props: ['cData'],
   data() {
     return {
-      rName: this.rData.name,
-      rValue: this.rData.value,
-      rChecked: this.rData.checked,
-      rTitle: this.rData.title,
+      cName: this.cData.name,
+      cValue: this.cData.value,
+      cChecked: this.cData.checked,
+      cTitle: this.cData.title,
     };
   },
 };
 </script>
 
 <style>
-.box-radio-input input[type='radio'] {
+.box-check-input input[type='checkbox'] {
   display: none;
 }
 
-.box-radio-input input[type='radio'] + span {
+.box-check-input input[type='checkbox'] + span {
   display: inline-block;
   background: none;
   border: 1px solid #2b6cb0;
@@ -39,14 +39,14 @@ export default {
   border-radius: 3px;
 }
 
-.box-radio-input input[type='radio']:checked + span {
+.box-check-input input[type='checkbox']:checked + span {
   border: 1px solid #2b6cb0;
   border-radius: 3px;
   background: #2b6cb0;
   color: #fff;
 }
 
-.box-radio-input {
+.box-check-input {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;

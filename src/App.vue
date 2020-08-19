@@ -12,6 +12,7 @@
       <router-link to="/date">DatePicker</router-link>|
       <router-link to="/chip">Chip</router-link>|
       <router-link to="/RadioBTN">RadioBTN</router-link>|
+      <router-link to="/CheckBTN">CheckBTN</router-link>|
     </div>
     <router-view />
   </div>

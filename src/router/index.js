@@ -84,6 +84,11 @@ const routes = [
     name: 'RadioBTN',
     component: () => import('../views/RadioBTN.vue'),
   },
+  {
+    path: '/CheckBTN',
+    name: 'CheckBTN',
+    component: () => import('../views/CheckBTN.vue'),
+  },
 ];
 
 const router = new VueRouter({

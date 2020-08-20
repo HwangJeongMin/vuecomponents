@@ -13,12 +13,51 @@ const routes = [
   {
     path: '/button',
     name: 'Button',
-    component: () => import('../views/Button.vue'),
+
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Button.vue'),
   },
   {
     path: '/date',
     name: 'DatePicker',
-    component: () => import('../views/DatePicker.vue'),
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/DatePicker.vue'),
+  },
+  {
+    path: '/SearchFilter',
+    name: 'SearchFilter',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/SearchFilter.vue'),
+  },
+  {
+    path: '/Avatar',
+    name: 'Avatar',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Avatar.vue'),
+  },
+  {
+    path: '/BasePage',
+    name: 'BasePage',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/BasePage.vue'),
+  },
+  {
+    path: '/Card',
+    name: 'Card',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Card.vue'),
   },
   {
     path: '/togglebutton',

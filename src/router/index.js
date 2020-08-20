@@ -83,6 +83,14 @@ const routes = [
     path: '/chart',
     name: 'Chart',
     component: () => import('../views/ChartPage.vue'),
+    path: '/RadioBTN',
+    name: 'RadioBTN',
+    component: () => import('../views/RadioBTN.vue'),
+  },
+  {
+    path: '/CheckBTN',
+    name: 'CheckBTN',
+    component: () => import('../views/CheckBTN.vue'),
   },
 ];
 

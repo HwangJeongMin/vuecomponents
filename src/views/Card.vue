@@ -3,346 +3,47 @@
     class="flex flex-col break-words bg-white border border-2 border-gray-400 shadow-md pt-1 px-4"
   >
     <ul>
-      <li class="float-left w-1/5 mt-1">
+      <li class="float-left w-1/5 m-1">
         <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
+        <ContentCard>
+          <template slot="imgTag">
+            <img src="../assets/logo.png" alt="Sunset in the mountains" class="w-56 min-w-0" />
+          </template>
 
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
+          <template slot="content">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
+          </template>
 
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
+          <template slot="avatar">
+            <div class="flex">
+              <avatar
+                url="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9
+                  &amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              ></avatar>
+              <span class="px-2 py-3">김철수</span>
             </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
+          </template>
 
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
+          <template slot="very-good">
+            <div class="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                class="color-red-600"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="#ff0000"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 
+                    19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              <span class="px-2">1,234</span>
             </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
-        <!-- {{-- 카드 컴포넌트 끝 --}} -->
-      </li>
-      <li class="float-left w-1/5 mt-1">
-        <!-- {{-- 카드 컴포넌트 시작 --}} -->
-        <div class="m-auto border border-blue-600 max-w-xs h-auto rounded shadow-lg">
-          <!-- 콘텐츠 이미지 시작 -->
-          <div class="w-56 m-auto overflow-hidden">
-            <img src="../assets/logo.png" alt="Sunset in the mountains" />
-          </div>
-          <!-- 콘텐츠 이미지 끝 -->
-
-          <!-- 콘텐츠 내용 3행 시작 -->
-          <div class="flex px-2 py-1 w-full overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">벳지</div>
-              <div class="float-right text-right">VR-ID svg</div>
-            </div>
-          </div>
-
-          <div class="h-14 p-2 overflow-hidden break-words">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</div>
-          </div>
-
-          <div class="mx-2 px-2 py-2 border-t border-blue-900 h-10 overflow-hidden">
-            <div class="w-full">
-              <div class="float-left text-left">등록자</div>
-              <div class="float-right text-right">좋아요!</div>
-            </div>
-          </div>
-          <!-- 콘텐츠 내용 3행 끝 -->
-        </div>
+          </template>
+        </ContentCard>
         <!-- {{-- 카드 컴포넌트 끝 --}} -->
       </li>
     </ul>
@@ -350,9 +51,14 @@
 </template>
 
 <script>
+import ContentCard from '../components/ContentCard';
+import avatar from '../components/Avatar';
+
 export default {
-  name: 'Card',
-  components: {},
+  components: {
+    ContentCard,
+    avatar,
+  },
 };
 </script>
 

@@ -9,6 +9,8 @@
       <router-link to="/togglebutton">ToggleButton</router-link>|
       <router-link to="/videoplayer">videoplayer</router-link>|
       <router-link to="/chip">Chip</router-link>| <router-link to="/chart">Chart</router-link>|
+      <router-link to="/RadioBTN">RadioBTN</router-link>|
+      <router-link to="/CheckBTN">CheckBTN</router-link>|
     </div>
     <router-view />
   </div>

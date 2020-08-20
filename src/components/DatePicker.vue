@@ -1,10 +1,11 @@
 <template>
-  <date-picker v-model="date" valueType="format"></date-picker>
+  <date-picker v-model="date" valuetype="format"></date-picker>
 </template>
 
 <script>
 import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
+import 'vue2-datepicker/locale/ko';
 
 export default {
   components: {

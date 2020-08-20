@@ -79,6 +79,11 @@ const routes = [
     name: 'Chip',
     component: () => import('../views/ChipPage.vue'),
   },
+  {
+    path: '/chart',
+    name: 'Chart',
+    component: () => import('../views/ChartPage.vue'),
+  },
 ];
 
 const router = new VueRouter({

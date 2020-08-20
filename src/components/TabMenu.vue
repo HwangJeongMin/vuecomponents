@@ -1,0 +1,66 @@
+<template>
+  <div class="w-11/12">
+    <ul class="flex">
+      <li
+        v-for="(value, key, index) in items"
+        :key="index"
+        class="mr-1"
+        :class="key == tMode ? '-mb-px' : ''"
+      >
+        <a
+          class="bg-white inline-block py-2 px-4 font-semibold"
+          :class="key == tMode ? 'text-black border-l border-t border-r border-blue-600 rounded-t' : 'text-gray-500'"
+          :href="makeTabMenuUrl(key)"
+        >{{ value }}</a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'TabMenu',
+  methods: {
+    getUrlParams(search) {
+      const hashes = search.slice(search.indexOf('?') + 1).split('&');
+      const params = {};
+      hashes.map(hash => {
+        const [key, val] = hash.split('=');
+        params[key] = decodeURIComponent(val);
+      });
+      return params;
+    },
+    makeTabMenuUrl(key) {
+      var ctMode = this.getUrlParams(window.location.search)['tMode'];
+      if (ctMode !== undefined && ctMode !== '') {
+        this.tMode = ctMode;
+      }
+      var fMode = this.getUrlParams(window.location.search)['fMode'];
+      fMode = fMode == undefined ? '' : fMode;
+      return '?fMode=' + fMode + '&tMode=' + key;
+    },
+  },
+  data() {
+    return {
+      items: {
+        insert: '인서트',
+        source: '촬영소스',
+        live: 'LIVE',
+        liveclean: 'LIVE CLEAN',
+        myshop: 'MYSHOP',
+        mobilelive: '모바일 LIVE',
+        mobilevod: '모바일 VOD',
+        sourcevideo: '소스영상',
+        image: '이미지',
+        music: '방송음원',
+      },
+      tMode: '',
+    };
+  },
+  mounted() {
+    if (this.tMode == undefined || this.tMode == '') {
+      this.tMode = Object.keys(this.items)[0];
+    }
+  },
+};
+</script>

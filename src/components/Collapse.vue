@@ -11,7 +11,7 @@
         </span>
       </div>
     </div>
-    <div class="flex bg-white overflow-hidden">
+    <div class="bg-white overflow-hidden">
       <transition name="collapse">
         <div v-if="show">
           <slot name="content"></slot>

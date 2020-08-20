@@ -89,6 +89,11 @@ const routes = [
     name: 'CheckBTN',
     component: () => import('../views/CheckBTN.vue'),
   },
+  {
+    path: '/TabMenu',
+    name: 'TabMenu',
+    component: () => import('../views/TabMenu.vue'),
+  },
 ];
 
 const router = new VueRouter({

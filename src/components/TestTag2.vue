@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="py-2">
-      <strong class="float-left px-4 py-1">상품군</strong>
-      <div class="inline-block relative w-11/12 mx-4">
+    <div class="clear-both text-left pt-2">
+      <span class="ml-2 text-sm font-bold">상품군</span>
+      <div class="inline-block relative w-full mt-1">
         <select
           class="block appearance-none w-full bg-white border border-gray-600 hover:border-gray-900 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
         >
@@ -19,41 +19,33 @@
         </div>
       </div>
     </div>
-    <div class="py-2">
-      <strong class="float-left px-4 py-1">상품명</strong>
-      <div class="inline-block relative w-11/12 mx-4">
-        <input
-          class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-          type="text"
-        />
-      </div>
+    <div class="clear-both text-left pt-2">
+      <span class="ml-2 mb-1 text-sm font-bold">상품명</span>
+      <input
+        class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-1"
+        type="text"
+      />
     </div>
-    <div class="py-2">
-      <strong class="float-left px-4 py-1">상품코드</strong>
-      <div class="inline-block relative w-11/12 mx-4">
-        <input
-          class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-          type="text"
-        />
-      </div>
+    <div class="clear-both text-left pt-2">
+      <span class="ml-2 mb-1 text-sm font-bold">상품코드</span>
+      <input
+        class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-1"
+        type="text"
+      />
     </div>
-    <div class="py-2">
-      <strong class="float-left px-4 py-1">브랜드</strong>
-      <div class="inline-block relative w-11/12 mx-4">
-        <input
-          class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-          type="text"
-        />
-      </div>
+    <div class="clear-both text-left pt-2">
+      <span class="ml-2 mb-1 text-sm font-bold">브랜드</span>
+      <input
+        class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-1"
+        type="text"
+      />
     </div>
-    <div class="py-2">
-      <strong class="float-left px-4 py-1">아이템 명</strong>
-      <div class="inline-block relative w-11/12 mx-4">
-        <input
-          class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-          type="text"
-        />
-      </div>
+    <div class="clear-both text-left pt-2">
+      <span class="ml-2 mb-1 text-sm font-bold">아이템 명</span>
+      <input
+        class="bg-white focus:outline-none focus:shadow-outline border border-gray-600 hover:border-gray-900 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-1"
+        type="text"
+      />
     </div>
   </div>
 </template>

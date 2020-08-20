@@ -80,6 +80,9 @@ const routes = [
     component: () => import('../views/ChipPage.vue'),
   },
   {
+    path: '/chart',
+    name: 'Chart',
+    component: () => import('../views/ChartPage.vue'),
     path: '/RadioBTN',
     name: 'RadioBTN',
     component: () => import('../views/RadioBTN.vue'),

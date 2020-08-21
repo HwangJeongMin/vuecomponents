@@ -43,16 +43,16 @@ export default {
   data() {
     return {
       items: {
-        insert: '인서트',
-        source: '촬영소스',
-        live: 'LIVE',
-        liveclean: 'LIVE CLEAN',
-        myshop: 'MYSHOP',
-        mobilelive: '모바일 LIVE',
-        mobilevod: '모바일 VOD',
-        sourcevideo: '소스영상',
-        image: '이미지',
-        music: '방송음원',
+        tab1: '탭메뉴1',
+        tab2: '탭메뉴2',
+        tab3: '탭메뉴3',
+        tab4: '탭메뉴4',
+        tab5: '탭메뉴5',
+        tab6: '탭메뉴6',
+        tab7: '탭메뉴7',
+        tab8: '탭메뉴8',
+        tab9: '탭메뉴9',
+        tab10: '탭메뉴10',
       },
       tMode: '',
     };

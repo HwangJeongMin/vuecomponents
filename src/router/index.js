@@ -83,6 +83,8 @@ const routes = [
     path: '/chart',
     name: 'Chart',
     component: () => import('../views/ChartPage.vue'),
+  },
+  {
     path: '/RadioBTN',
     name: 'RadioBTN',
     component: () => import('../views/RadioBTN.vue'),
@@ -96,6 +98,11 @@ const routes = [
     path: '/TabMenu',
     name: 'TabMenu',
     component: () => import('../views/TabMenu.vue'),
+  },
+  {
+    path: '/NavMenu',
+    name: 'NavMenu',
+    component: () => import('../views/NavMenu.vue'),
   },
 ];
 

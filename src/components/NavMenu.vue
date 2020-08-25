@@ -9,10 +9,7 @@
         <li
           v-for="(value, key, index) in items"
           :key="index"
-          class="inline-block h-10 mx-4"
-          :class="hoverClass"
-          @mouseover="mouseOver()"
-          @mouseout="mouseLeave()"
+          class="inline-block h-10 mx-4 border-0 border-b-4 default-main-bbt hover:border-white"
         >
           <a href="#">{{ value }}</a>
         </li>
@@ -33,19 +30,15 @@ export default {
   data() {
     return {
       items: this.navmenu,
-      hoverClass: '',
     };
   },
-  methods: {
-    mouseOver() {
-      this.hoverClass = 'border-0 border-b-4 border-white';
-    },
-    mouseLeave() {
-      this.hoverClass = '';
-    },
-  },
   mounted() {
-    console.log(this.items);
+    //console.log('dd');
   },
 };
 </script>
+<style>
+.default-main-bbt {
+  border-bottom: 4px solid #00aebd;
+}
+</style>

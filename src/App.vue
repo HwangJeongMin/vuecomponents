@@ -15,6 +15,7 @@
       <router-link to="/CheckBTN">CheckBTN</router-link>|
       <router-link to="/TabMenu">TabMenu</router-link>|
       <router-link to="/NavMenu">NavMenu</router-link>|
+      <router-link to="/SearchBar">SearchBar</router-link>|
     </div>
     <router-view />
   </div>

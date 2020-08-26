@@ -104,6 +104,11 @@ const routes = [
     name: 'NavMenu',
     component: () => import('../views/NavMenu.vue'),
   },
+  {
+    path: '/SearchBar',
+    name: 'SearchBar',
+    component: () => import('../views/SearchBar.vue'),
+  },
 ];
 
 const router = new VueRouter({

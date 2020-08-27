@@ -1,17 +1,13 @@
 <template>
   <div>
-    <img
-      :src="url"
-      alt
-      class="m-1 inline-block align-middle h-10 w-10 rounded-full text-white shadow-solid"
-    />
+    <img :src="postsdata.url" alt :class="postsdata.class" />
   </div>
 </template>
 
 <script>
 export default {
   name: 'Avatar',
-  props: ['url'],
+  props: ['postsdata'],
   components: {},
 };
 </script>

@@ -16,6 +16,7 @@
       <router-link to="/TabMenu">TabMenu</router-link>|
       <router-link to="/NavMenu">NavMenu</router-link>|
       <router-link to="/SearchBar">SearchBar</router-link>|
+      <router-link to="/Pagination">Pagination</router-link>|
     </div>
     <router-view />
   </div>

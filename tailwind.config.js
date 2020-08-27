@@ -31,11 +31,11 @@ module.exports = {
         likeColor: '#CE0C47',
         // 필터, 태그 선택 시 텍스트 색상 & 인기검색어 텍스트 색상
         'ultramarine-blue': '#171F31',
+        // 페이지네이션
+        pagination: '#CED0DA',
       },
     },
   },
-  variants: {
-    borderWhite: ['hover'],
-  },
+  variants: {},
   plugins: [],
 };

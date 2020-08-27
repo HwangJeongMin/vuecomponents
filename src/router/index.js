@@ -109,6 +109,11 @@ const routes = [
     name: 'SearchBar',
     component: () => import('../views/SearchBar.vue'),
   },
+  {
+    path: '/Pagination',
+    name: 'Pagination',
+    component: () => import('../views/Pagination.vue'),
+  },
 ];
 
 const router = new VueRouter({
